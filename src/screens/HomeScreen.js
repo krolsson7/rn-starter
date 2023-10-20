@@ -14,6 +14,17 @@ const HomeScreen = ({ navigation }) => {
   const pressCounter = () => {
     navigation.navigate("Counter");
   };
+  const pressColor = () => {
+    navigation.navigate("Color");
+  };
+  const pressSquare = () => {
+    navigation.navigate("Square");
+  };
+
+  const pressAdjustColor = () => {
+    navigation.navigate("AdjustColor");
+  };
+
   return (
     <View>
       <Text style={styles.text}>HomeScreen</Text>
@@ -25,6 +36,13 @@ const HomeScreen = ({ navigation }) => {
       <Button style={styles.button} title="List" onPress={pressList} />
       <Button style={styles.button} title="Image" onPress={pressImage} />
       <Button style={styles.button} title="Counter" onPress={pressCounter} />
+      <Button style={styles.button} title="Color" onPress={pressColor} />
+      <Button style={styles.button} title="Square" onPress={pressSquare} />
+      <Button
+        style={styles.button}
+        title="AdjustColor"
+        onPress={pressAdjustColor}
+      />
     </View>
   );
 };

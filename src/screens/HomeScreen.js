@@ -25,6 +25,10 @@ const HomeScreen = ({ navigation }) => {
     navigation.navigate("AdjustColor");
   };
 
+  const pressTextDemo = () => {
+    navigation.navigate("Text");
+  };
+
   return (
     <View>
       <Text style={styles.text}>HomeScreen</Text>
@@ -43,6 +47,7 @@ const HomeScreen = ({ navigation }) => {
         title="AdjustColor"
         onPress={pressAdjustColor}
       />
+      <Button style={styles.button} title="Text Demo" onPress={pressTextDemo} />
     </View>
   );
 };

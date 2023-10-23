@@ -8,6 +8,7 @@ import CounterScreen from "./src/screens/CounterScreen";
 import ColorScreen from "./src/screens/ColorScreen";
 import SquareScreen from "./src/screens/SquareScreen";
 import AdjustColorScreen from "./src/screens/AdjustColorScreen";
+import TextScreen from "./src/screens/TextScreen";
 
 const navigator = createStackNavigator(
   {
@@ -19,11 +20,12 @@ const navigator = createStackNavigator(
     Color: ColorScreen,
     Square: SquareScreen,
     AdjustColor: AdjustColorScreen,
+    Text: TextScreen,
   },
   {
     initialRouteName: "Home",
     defaultNavigationOptions: {
-      title: "HOME PAGE",
+      title: "TIMA's App",
     },
   }
 );
